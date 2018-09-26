@@ -174,7 +174,7 @@ First, install Nginx and Supervisor::
     $ sudo apt install nginx supervisor
 
 Now, you will need to create the supervisor configuration file (often located in
-``/etc/supervisor/conf.d/`` - here, we're making Supervisor listen on the TCP
+``/etc/supervisor/conf.d/`` and often named ``supervisord.conf`` (http://supervisord.org/configuration.html) - here, we're making Supervisor listen on the TCP
 port and then handing that socket off to the child processes so they can all
 share the same bound port::
 
